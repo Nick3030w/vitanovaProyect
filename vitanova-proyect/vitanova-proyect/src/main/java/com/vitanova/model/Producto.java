@@ -1,5 +1,8 @@
 package com.vitanova.model;
 
+/**
+ * @author Nick3030w
+ */
 import jakarta.persistence.*;
 
 @Entity

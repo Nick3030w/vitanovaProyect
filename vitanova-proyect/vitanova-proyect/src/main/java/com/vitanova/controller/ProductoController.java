@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 //import com.vitanova.model.Producto;
 import com.vitanova.repositorio.ProductoRepositorio;
 
+/**
+ * @author Nick3030w
+ */
 @Controller
 public class ProductoController {
     @Autowired
