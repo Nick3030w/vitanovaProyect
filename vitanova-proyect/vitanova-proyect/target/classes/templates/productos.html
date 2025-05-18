@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .precio {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Suplementos Deportivos</h1>
+    <ul>
+        <li th:each="producto : ${productos}">
+            <span th:text="${producto.nombre}"></span> -
+            <span class="precio" th:text="'$' + ${#numbers.formatDecimal(producto.precio, 1, 2)}"></span>
+        </li>
+    </ul>
+</body>
+
+</html>
